@@ -29,7 +29,7 @@ function Routeconfig($stateProvider,$urlRouterProvider)
     url:"/item-details/{Category}",
     templateUrl:"Templates/Items.template.html",
     controller:"Itemscontroller as ctrl1",
-    resolve :{
+    resolve :{    
         item: ['MenuService','$stateParams', function(MenuService, $stateParams){
         return MenuService.getItemsForCategory($stateParams.Category);
       }]
