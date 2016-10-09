@@ -8,7 +8,6 @@ function Categoriescontrollerfunction(items)
 {
   var ctrl = this;
   ctrl.items = items.data;
-  console.log(this);
 }
 
 })();

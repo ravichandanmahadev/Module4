@@ -4,32 +4,28 @@
     <title></title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--External Library  -->
     <link href="/Assets/bootstrap.min.css" rel="stylesheet"></link>
     <script src="/Assets/angular.min.js"></script>
     <script src="/Assets/angular-ui-router.min.js"> </script>
-    
     <!-- module -->
     <script src="/Modules/menuapp.module.js"> </script>
     <script src="/Modules/data.module.js"> </script>
     <script src = "/Service/menudata.service.js"></script>
-    <script src="categories.component.js"></script>
     <script src="router.js" > </script>
-
+    <!-- Controllers -->
     <script src="/Controllers/Categories.controller.js"> </script>
     <script src="/Controllers/Items.controller.js"> </script>
-
-
-    <script src="items.component.js"></script>
+    <!-- Component -->
+    <script src="/Component/items.component.js"></script>
+    <script src="/Component/categories.component.js"></script>
 </head>
 <body>
 <h1>Welcome to Our Resturant!!!</h1>
 <div>
-  <!-- <span ncy-breadcrumb></span> -->
-  <ul>
-    <div>
+  <div>
       <ui-view> </ui-view>
-    </div>
-  </ul>
+  </div>
 </div>
 </body>
 </html>

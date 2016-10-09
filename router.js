@@ -16,10 +16,9 @@ function Routeconfig($stateProvider,$urlRouterProvider)
     });
 
   $stateProvider.state("Categories" , {
-    url:"/categories",
+    url:"/Categories",
     templateUrl:"/Templates/maincategory.template.html",
     controller:"Categoriescontroller as ctrl",
-    ncyBreadcrumb: { label: 'Categories'  },
     resolve :{
       items: ['MenuService', function(MenuService){
         return MenuService.getAllCategories();
@@ -30,11 +29,8 @@ function Routeconfig($stateProvider,$urlRouterProvider)
     url:"/item-details/{Category}",
     templateUrl:"Templates/Items.template.html",
     controller:"Itemscontroller as ctrl1",
-    ncyBreadcrumb: {
-      label: 'Item Detail page'
-    },
     resolve :{
-        items: ['MenuService','$stateParams', function(MenuService, $stateParams){
+        item: ['MenuService','$stateParams', function(MenuService, $stateParams){
         return MenuService.getItemsForCategory($stateParams.Category);
       }]
     }

@@ -3,11 +3,10 @@
 var mod = angular.module("Menuapp");
 mod.controller("Itemscontroller", Itemscontrollerfunction);
 
-Itemscontrollerfunction.$inject = ['items']
-function Itemscontrollerfunction(items)
+Itemscontrollerfunction.$inject = ['item']
+function Itemscontrollerfunction(item)
 {
   var ctrl = this;
-  ctrl.menuList = items.data.menu_items;
-  console.log(ctrl.menuList);
+  ctrl.item = item.data.menu_items;
 }
 })();
