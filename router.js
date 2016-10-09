@@ -17,7 +17,7 @@ function Routeconfig($stateProvider,$urlRouterProvider)
 
   $stateProvider.state("Categories" , {
     url:"/Categories",
-    templateUrl:"/Templates/maincategory.template.html",
+    templateUrl:"Templates/maincategory.template.html",
     controller:"Categoriescontroller as ctrl",
     resolve :{
       items: ['MenuService', function(MenuService){
