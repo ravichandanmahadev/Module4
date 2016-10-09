@@ -25,7 +25,7 @@ function Routeconfig($stateProvider,$urlRouterProvider)
       }]
     }
   });
-  $stateProvider.state("Categories.itemDetails" , {
+  $stateProvider.state("itemDetails" , {
     url:"/item-details/{Category}",
     templateUrl:"Templates/Items.template.html",
     controller:"Itemscontroller as ctrl1",
