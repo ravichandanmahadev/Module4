@@ -11,7 +11,7 @@ function Routeconfig($stateProvider,$urlRouterProvider)
 
     $stateProvider.state("Home" , {
       url:"/",
-      templateUrl:"/Templates/Home.template.html",
+      templateUrl:"Templates/Home.template.html",
       ncyBreadcrumb: { label: 'Home' }
     });
 
